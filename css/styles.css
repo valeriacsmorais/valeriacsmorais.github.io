@@ -11617,14 +11617,11 @@ html {
   margin-right: 1rem;;
 }
 
-.logo-img-sign{
-  max-height: 6rem;
-}
-
 @media (min-width: 900px) {
   .logo-img-sign {
     font-size: 0.5rem;
   }
+}
 
 .profile {
   position: relative;
@@ -11643,7 +11640,6 @@ html {
   left: 50%;
   transform: translateX(-50%);
 }
-
 .profile .dots-1 {
   position: absolute;
   width: 3vw;
