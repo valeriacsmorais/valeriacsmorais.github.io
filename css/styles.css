@@ -86,6 +86,12 @@
   --bs-vcsm-font-size: 0.75rem;
 }
 
+@font-face {
+  font-family: 'Sandblast';
+  src: url('Sandblast.woff') format('woff'), /* Browser modernos */
+       url('Sandblast.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
 *,
 *::before,
 *::after {
@@ -8200,6 +8206,13 @@ textarea.form-control-lg {
   /*color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;*/
 }
 
+.text-primary-brand {
+  color: var(--bs-vcsm-black);
+  font-family: Sandblast;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
 .text-secondary {
   --bs-text-opacity: 1;
   /*color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;*/
@@ -11599,6 +11612,20 @@ html {
   font-size: 1.5rem;
 }
 
+.logo-img{
+  max-height: 3rem;
+  margin-right: 1rem;;
+}
+
+.logo-img-sign{
+  max-height: 6rem;
+}
+
+@media (min-width: 900px) {
+  .logo-img-sign {
+    font-size: 0.5rem;
+  }
+
 .profile {
   position: relative;
   height: 75vw;
@@ -11616,6 +11643,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .profile .dots-1 {
   position: absolute;
   width: 3vw;
